@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    title Euromacvietnam
+    link(rel='stylesheet', href='../css/bootstrap.min.css')
+    link(rel='stylesheet', href='../css/mdb.min.css')
+    link(rel='stylesheet', href='../css/owl.carousel.min.css')
+    link(rel='stylesheet', href='../css/owl.theme.default.min.css')
+    link(rel='stylesheet', href='../css/xzoom.css')
+    link(rel='stylesheet', href='../css/magnific-popup.css')
+    link(rel='stylesheet', href='../css/materialdesignicons.min.css')
+    link(rel='stylesheet', href='../css/sweetalert2.min.css')
+    link(rel='stylesheet', href='../css/layout.css')
+    link(rel='shortcut icon', href='../img/favicon.png')
+  body
+    .go-top(title='Lên đầu trang')
+      span
+      span
+
+    block header
+      header
+        section.header-top
+          .container
+            .row
+              .col-lg-6.d-none.d-lg-block
+                h5 Chào mừng quý khách đến với Cleantechvietnam
+              .col-lg-6.text-center.text-lg-right
+                ul
+                  li
+                    a(href='tel:0909383939')
+                      i.mdi.mdi-deskphone
+                      | 0909 38 39 39
+                  
+                  li
+                    a(href='mailto:trunghoanggia@gmail.com')
+                      i.mdi.mdi-email-outline
+                      | trunghoanggia@gmail.com
+        
+        section.header-bottom
+          .container
+            .logo.d-none.d-xl-block
+              a(href='index.html')
+                img(src='../img/logo.png')
+            .search
+              form(action="")
+                input(type="text", placeholder="Nhập từ khóa . . .")
+                select
+                  option(value="") Chọn danh mục
+                  option(value="") Máy mài nền liên hợp Cleantech
+                  option(value="") Máy mài nền liên hợp Cleantech
+                  option(value="") Máy mài nền liên hợp Cleantech
+                  option(value="") Máy mài nền liên hợp Cleantech
+                button
+                  i.mdi.mdi-magnify
+            .cart
+              a(href='gio-hang.html')
+                h5.d-none.d-lg-inline-block giỏ hàng
+                i.mdi.mdi-cart-outline
+                span 10
+              
+            .toggleMenu.d-block.d-xl-none
+              i.mdi.mdi-menu
+
+        section.menu.wow
+          .container
+            .main-menu
+              ul.nav
+                .nav-close
+                  i.mdi.mdi-close.d-block.d-lg-none
+                li.nav-item
+                  a.nav-link(href='index.html') Trang chủ
+                li.nav-item
+                  a.nav-link(href='gioi-thieu.html') Giới thiệu
+                li.nav-item
+                  a.nav-link(href='san-pham.html') Máy vệ sinh công nghiệp
+                li.nav-item
+                  a.nav-link(href='san-pham.html') Phụ kiện máy móc
+                li.nav-item
+                  a.nav-link(href='hoa-chat-cha-san.html') Hóa chất vệ sinh
+                li.nav-item
+                  a.nav-link(href='dich-vu-ve-sinh-cong-nghiep.html') Dịch vụ vệ sinh công nghiệp
+                li.nav-item
+                  a.nav-link(href='lien-he.html') Liên hệ
+              
+                
+
+        .overlay-menu
+
+        
+
+    .modal.quickview.fade.product-modal-1.show(tabindex='-1', role='dialog', aria-labelledby='exampleModalCenterTitle')
+      .modal-dialog.modal-lg.modal-dialog-centered(role='document')
+        .modal-content
+          .modal-header
+            h5#exampleModalCenterTitle.modal-title Xem nhanh sản phẩm
+            button.close(type='button', data-dismiss='modal', aria-label='Close')
+              span(aria-hidden='true') ×
+          .modal-body
+            .row
+              .col-lg-6
+                .modal-img
+                  img(src='../img/product-1.png')
+                      
+              .col-lg-6
+                .quickview-detail
+                  h3 Logitech G502 Proteus Spectrum
+                  h4.price-product
+                    | Giá: Liên hệ
+                  h5
+                    | This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit.
+                  .quantity
+                    span Số lượng: 
+                    button.waves-effect.waves-light -
+                    input(type='number', value='1', min='1')
+                    button.waves-effect.waves-light +
+                    button.custom-cart thêm vào giỏ
+                .tags
+                  | Thẻ tag: 
+                  span 
+                    a(href='#') Đặc sản Hàn quốc
+                  | ,
+                  span 
+                    a(href='#') Thời trang Hàn Quốc
+          .modal-footer
+            button.btn.btn-light(type='button', data-dismiss='modal') Đóng
+
+    article
+      block article
+
+
+    
+    block footer
+      section.footer
+        .container
+          .row
+            .col-xl-4.col-lg-4.col-sm-6
+              .contact
+                h4 
+                  | thông tin liên hệ
+                  i.mdi.mdi-chevron-down
+                ul
+                  li
+                    i.mdi.mdi-map-outline
+                    | 192/41 (số cũ E29 ) Nguyễn Oanh, Cư Xá Ba Son P.17, Q. Gò Vấp, Tp.HCM 
+
+                  li
+                    i.mdi.mdi-deskphone
+                    | (028) 5446.5679 - 2200.9858 - 6275.9112
+                  li
+                    i.mdi.mdi-email-outline
+                    | euromacvietnam@gmail.com
+                  li
+                    i.mdi.mdi-fax
+                    | Fax: (028) 3985.8963
+            
+            .col-xl-2.col-lg-4.col-sm-6
+              .link
+                h4 
+                  | Liên kết
+                  i.mdi.mdi-chevron-down
+                ul
+                  li
+                    a(href='gioi-thieu.html') Giới thiệu
+                  li
+                    a(href='san-pham.html') Máy vệ sinh công nghiệp
+                  li
+                    a(href='hoa-chat-cha-san.html') Hóa chất chà sàn
+                  li
+                    a(href='dich-vu-ve-sinh-cong-nghiep.html') Dịch vụ vệ sinh công nghiệp
+                  li
+                    a(href='lien-he.html') Liên hệ
+            
+            .col-xl-3.col-lg-4.col-sm-6
+              .support
+                h4 
+                  | Hỗ trợ trực tuyến
+                  i.mdi.mdi-chevron-down
+                ul
+                  li
+                    a(href='#')
+                      img(src='../img/skype.png', title='Nhấn để liên hệ')
+                    h5 hỗ trợ
+                    h6 0988.53.46.49
+                    
+                  li
+                    a(href='#')
+                      img(src='../img/skype.png', title='Nhấn để liên hệ')
+                    h5 PHÒNG KINH DOANH 
+                    h6 0909.38.39.39
+
+                  li
+                    a(href='#')
+                      img(src='../img/skype.png', title='Nhấn để liên hệ')
+                    h5 PHÒNG KỸ THUẬT 
+                    h6 0903.670.839 - 0903.091.898
+                  
+            
+            .col-xl-2.d-lg-none.col-sm-6.d-xl-block
+              .statistical
+                h4 
+                  | Thống kê
+                  i.mdi.mdi-chevron-down
+                
+                ul
+                  li 
+                    | Đang online: 
+                    span 55
+                  li 
+                    | Hôm nay: 
+                    span 555
+                  li 
+                    | Hôm qua: 
+                    span 55555
+                  li 
+                    | Tổng truy cập: 
+                    span 555555
+
+          .copyright.text-center
+            h5 Copyright @ 2019 Euromacvietnam. All Reserved. Designed by Tri Viet
+          
+
+
+
+                    
+                    
+                    
+
+
+      script(src='../js/jquery-3.3.1.min.js')
+      script(src='../js/bootstrap.min.js')
+      script(src='../js/mdb.min.js')
+      script(src='../js/owl.carousel.min.js')
+      script(src='../js/xzoom.min.js')
+      script(src='../js/magnific-popup.js')
+      script(src='../js/sweetalert2.min.js')
+      script(src='../js/layout.js')
