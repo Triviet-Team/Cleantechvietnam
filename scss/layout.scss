@@ -52,6 +52,7 @@ $main_color: #1A84D7;
     a {
       font-size: 16px;
       font-weight: 600;
+      -webkit-transition: .3s;
       transition: .3s;
 
       &:hover {
@@ -94,7 +95,8 @@ $main_color: #1A84D7;
       &:focus {
         border-color: #FE9516;
         outline: none;
-        box-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
       }
     }
 
@@ -131,7 +133,8 @@ $main_color: #1A84D7;
       &:focus {
         border-color: #FE9516;
         outline: none;
-        box-shadow: none;
+        -webkit-box-shadow: none;
+                box-shadow: none;
       }
     }
   }
@@ -194,6 +197,7 @@ $main_color: #1A84D7;
       color: black;
       margin: 10px 0;
       z-index: 10000;
+      -webkit-transition: 500ms;
       transition: 500ms;
 
       i {
@@ -206,6 +210,7 @@ $main_color: #1A84D7;
       text-align: center;
 
       li {
+        -webkit-transition: .5s;
         transition: .5s;
         display: inline-block;
         padding: 20px 0;
@@ -217,6 +222,7 @@ $main_color: #1A84D7;
         a {
           font-weight: 600;
           font-size: 14px;
+          -webkit-transition: .3s;
           transition: .3s;
           color: white;
           padding: 0;
@@ -282,6 +288,7 @@ $main_color: #1A84D7;
       padding-bottom: 0;
       height: 350px;
       overflow: hidden;
+      -webkit-transition: all ease .3s;
       transition: all ease .3s;
 
       &.active {
@@ -300,6 +307,7 @@ $main_color: #1A84D7;
 
         a {
           @include o1;
+          -webkit-transition: .3s;
           transition: .3s;
           color: #585858;
 
@@ -316,6 +324,7 @@ $main_color: #1A84D7;
       cursor: pointer;
       font-weight: 500;
       font-size: 15px;
+      -webkit-transition: .3s;
       transition: .3s;
 
       &:hover {
@@ -336,7 +345,8 @@ $main_color: #1A84D7;
     position: absolute;
     top: 50%;
     right: 30px;
-    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
     margin-top: 0;
 
     .owl-dot {
@@ -402,6 +412,7 @@ $main_color: #1A84D7;
         padding-bottom: 0;
         height: auto;
         overflow: hidden;
+        -webkit-transition: all ease .3s;
         transition: all ease .3s;
   
         &.active {
@@ -420,6 +431,7 @@ $main_color: #1A84D7;
   
           a {
             @include o1;
+            -webkit-transition: .3s;
             transition: .3s;
             color: #585858;
   
@@ -436,6 +448,7 @@ $main_color: #1A84D7;
         cursor: pointer;
         font-weight: 500;
         font-size: 15px;
+        -webkit-transition: .3s;
         transition: .3s;
   
         &:hover {
@@ -499,7 +512,8 @@ $main_color: #1A84D7;
   
             .xactive {
               border-color: $main-color;
-              box-shadow: 0px 0px 3px 0px $main-color;
+              -webkit-box-shadow: 0px 0px 3px 0px $main-color;
+                      box-shadow: 0px 0px 3px 0px $main-color;
             }
   
             .owl-theme .owl-nav {
@@ -509,8 +523,10 @@ $main_color: #1A84D7;
                 position: absolute;
                 top: 40%;
                 font-size: 30px;
+                -webkit-transition: .5s;
                 transition: .5s;
-                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                        transform: translateY(-50%);
   
                 &:hover,
                 &:focus {
@@ -568,6 +584,7 @@ $main_color: #1A84D7;
           .quantity {
             a {
               margin: 0 10px;
+              -webkit-transition: .5s;
               transition: .5s;
   
               &:hover {
@@ -591,6 +608,7 @@ $main_color: #1A84D7;
             button {
               font-size: 14px;
               cursor: pointer;
+              -webkit-transition: .2s;
               transition: .2s;
               background: black;
               border: 0;
@@ -615,6 +633,7 @@ $main_color: #1A84D7;
               font-weight: bold;
               border-radius: 3px;
               cursor: pointer;
+              -webkit-transition: .5s;
               transition: .5s;
               border: 2px solid $main-color;
               margin-left: 5px;
@@ -623,7 +642,8 @@ $main_color: #1A84D7;
               &:focus {
                 background: none;
                 color: $main-color;
-                box-shadow: none;
+                -webkit-box-shadow: none;
+                        box-shadow: none;
                 outline: none;
               }
 
@@ -645,6 +665,7 @@ $main_color: #1A84D7;
                 padding-bottom: 11px;
                 border: none;
                 border-bottom: 2px solid #383838;
+                -webkit-transition: .5s;
                 transition: .5s;
                 font-weight: bold;
   
@@ -738,6 +759,7 @@ $main_color: #1A84D7;
     padding-bottom: 0;
     height: auto;
     overflow: hidden;
+    -webkit-transition: all ease .3s;
     transition: all ease .3s;
 
     &.active {
@@ -756,6 +778,7 @@ $main_color: #1A84D7;
 
       a {
         @include o1;
+        -webkit-transition: .3s;
         transition: .3s;
         color: #585858;
 
@@ -772,6 +795,7 @@ $main_color: #1A84D7;
     cursor: pointer;
     font-weight: 500;
     font-size: 15px;
+    -webkit-transition: .3s;
     transition: .3s;
 
     &:hover {
@@ -833,14 +857,16 @@ $main_color: #1A84D7;
       right: 10px;
       width: 40%;
       top: 50%;
-      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
     }
 
     &-detail {
       width: 50%;
       position: absolute;
       top: 50%;
-      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
       left: 20px;
 
       h2 {
@@ -860,6 +886,7 @@ $main_color: #1A84D7;
         text-transform: uppercase;
         font-size: 16px;
         font-weight: 600;
+        -webkit-transition: .3s;
         transition: .3s;
 
         &:hover {
@@ -925,6 +952,7 @@ $main_color: #1A84D7;
         height: 35px;
         text-align: center;
         line-height: 35px;
+        -webkit-transition: .3s;
         transition: .3s;
 
         &:hover {
@@ -958,6 +986,7 @@ $main_color: #1A84D7;
         height: 35px;
         text-align: center;
         line-height: 35px;
+        -webkit-transition: .3s;
         transition: .3s;
 
         &:hover {
@@ -971,10 +1000,12 @@ $main_color: #1A84D7;
     margin-bottom: 30px;
 
     img {
+      -webkit-transition: .3s;
       transition: .3s;
 
       &:hover {
-        filter: brightness(.9);
+        -webkit-filter: brightness(.9);
+                filter: brightness(.9);
       }
     }
   }
@@ -996,7 +1027,8 @@ $main_color: #1A84D7;
         content: '';
         position: absolute;
         left: 50%;
-        transform: translateX(-50%) rotate(135deg);
+        -webkit-transform: translateX(-50%) rotate(135deg);
+                transform: translateX(-50%) rotate(135deg);
         bottom: -8px;
         border-left: 15px solid transparent;
         border-top: 15px solid #FE9516;
@@ -1020,6 +1052,7 @@ $main_color: #1A84D7;
         height: 35px;
         text-align: center;
         line-height: 35px;
+        -webkit-transition: .3s;
         transition: .3s;
 
         &:hover {
@@ -1052,6 +1085,8 @@ $main_color: #1A84D7;
 .box-seller {
   padding: 15px 0;
   margin: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   border-bottom: 1px solid #e1e1e1;
 
@@ -1064,7 +1099,8 @@ $main_color: #1A84D7;
 
     &:hover {
       img {
-        transform: translate(-50%, -50%) scale(1.2);
+        -webkit-transform: translate(-50%, -50%) scale(1.2);
+                transform: translate(-50%, -50%) scale(1.2);
       }
     }
 
@@ -1072,8 +1108,10 @@ $main_color: #1A84D7;
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
       width: 100%;
+      -webkit-transition: .3s;
       transition: .3s;
     }
   }
@@ -1089,6 +1127,7 @@ $main_color: #1A84D7;
     h5 {
       a {
         font-weight: 500;
+        -webkit-transition: .3s;
         transition: .3s;
         @include o2;
 
@@ -1107,11 +1146,13 @@ $main_color: #1A84D7;
 
     &:hover {
       img {
-        transform: scale(1.2);
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
       }
     }
 
     img {
+      -webkit-transition: .3s;
       transition: .3s;
     }
   }
@@ -1122,6 +1163,7 @@ $main_color: #1A84D7;
 
       a {
         font-weight: 600;
+        -webkit-transition: .3s;
         transition: .3s;
         @include o1;
 
@@ -1141,12 +1183,14 @@ $main_color: #1A84D7;
 .box-product {
   border: 1px solid transparent;
   padding: 10px;
+  -webkit-transition: .3s;
   transition: .3s;
   position: relative;
 
   &:hover {
     border: 1px solid #e1e1e1;
-    box-shadow: 0 0 10px rgba($color: #000000, $alpha: .16);
+    -webkit-box-shadow: 0 0 10px rgba($color: #000000, $alpha: .16);
+            box-shadow: 0 0 10px rgba($color: #000000, $alpha: .16);
 
     .box-product-img-custom {
       opacity: 1;
@@ -1181,7 +1225,8 @@ $main_color: #1A84D7;
 
     &:hover {
       img {
-        transform: translate(-50%, -50%) scale(1.2);
+        -webkit-transform: translate(-50%, -50%) scale(1.2);
+                transform: translate(-50%, -50%) scale(1.2);
       }
     }
     
@@ -1189,8 +1234,10 @@ $main_color: #1A84D7;
       position: absolute;
       top: 50%;
       left: 50%;
-      transform: translate(-50%, -50%);
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
       width: 100%;
+      -webkit-transition: .3s;
       transition: .3s;
     }
 
@@ -1199,6 +1246,7 @@ $main_color: #1A84D7;
       z-index: 2;
       right: 0;
       bottom: 10px;
+      -webkit-transition: .3s;
       transition: .3s;
       opacity: 0;
 
@@ -1208,6 +1256,7 @@ $main_color: #1A84D7;
         font-size: 16px;
         padding: 5px 9px;
         background: #e1e1e1;
+        -webkit-transition: .3s;
         transition: .3s;
 
         &:hover {
@@ -1229,6 +1278,7 @@ $main_color: #1A84D7;
 
     h5 a {
       font-weight: 600;
+      -webkit-transition: .3s;
       transition: .3s;
       @include o1;
 
