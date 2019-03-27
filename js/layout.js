@@ -6,7 +6,6 @@ $('.slider-carousel').owlCarousel({
   dots: true,
   nav: false,
   items: 1,
-  center:true,
   autoHeight: true,
   animateOut: 'fadeOut',
   animateIn: 'fadeIn',
@@ -56,7 +55,7 @@ $('.category-carousel').owlCarousel({
   autoplayHoverPause: true,
   dots: false,
   nav: true,
-  items: 2,
+  items: 1,
   navText: [
     "<i class='mdi mdi-chevron-left'></i>",
     "<i class='mdi mdi-chevron-right'></i>" 
@@ -64,12 +63,55 @@ $('.category-carousel').owlCarousel({
   autoplaySpeed: 1000,
   margin: 30,
   responsive: {
-    600: {
-        items:2
+    0: {
+      items:1
+    },
+    768: {
+      items:2
     }
   }
 });
 
+$('.service-carousel').owlCarousel({
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  dots: false,
+  nav: true,
+  items: 1,
+  autoplaySpeed: 1000,
+  navText: [
+    "<i class='mdi mdi-chevron-left'></i>",
+    "<i class='mdi mdi-chevron-right'></i>" 
+  ],
+});
+
+$('.product-carousel').owlCarousel({
+  loop: true,
+  autoplay: true,
+  autoplayTimeout: 5000,
+  autoplayHoverPause: true,
+  dots: false,
+  nav: true,
+  items: 1,
+  navText: [
+    "<i class='mdi mdi-chevron-left'></i>",
+    "<i class='mdi mdi-chevron-right'></i>" 
+  ],
+  autoplaySpeed: 1000,
+  margin: 30,
+  responsive: {
+    0: {
+      items:2,
+      margin: 15,
+    },
+    
+    768: {
+      items:3
+    }
+  }
+});
 
 $('.partner-carousel').owlCarousel({
   loop: true,
@@ -80,10 +122,10 @@ $('.partner-carousel').owlCarousel({
   nav: false,
   autoplaySpeed: 1000,
   margin: 40,
-  autoWidth: true,
   responsive: {
     0: {
-        items:2
+        items:2,
+        margin: 20,
     },
     600: {
         items:3
@@ -92,7 +134,7 @@ $('.partner-carousel').owlCarousel({
         items:4
     },
     1200: {
-        items:5
+        items:4
     }
   }
 });

@@ -49,7 +49,6 @@ $main_color: #1A84D7;
     }
   }
 
-        
   .toggleMenu {
     display: block;
     position: absolute;
@@ -177,6 +176,22 @@ $main_color: #1A84D7;
   .article-top .category ul {
     height: 260px;
   }
+  
+  .category-banner {
+    .box-category-banner {
+      height: 23vw;
+
+      &-detail {
+        h2 {
+          font-size: 2vmax;
+        }
+      }
+    }
+  }
+
+  .box-product-img-custom {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 992px) {
@@ -192,18 +207,10 @@ $main_color: #1A84D7;
     }
   }
 
-
   .product-page {
     .container {
       display: block;
-
-      .left {
-        display: none;
-      }
-    }
-
-    .main-zone {
-      grid-gap: 30px;
+      position: relative;
     }
   }
 
@@ -329,10 +336,77 @@ $main_color: #1A84D7;
     }
   }
 
+  .product-page .left {
+
+    .category {
+      position: absolute;
+      top: -114px;
+      width: 250px;
+      left: 15px;
+      z-index: 10;
+  
+      h4 {
+        height: 40px;
+        line-height: 40px;
+      }
+
+      ul {
+        height: 0;
+        transition: .3s;
+        padding: 0 15px;
+        max-height: 100vh;
+        overflow: scroll;
+
+        &.down {
+          height: auto;
+          padding: 15px;
+        }
+      }
+
+      h5 {
+        display: none;
+      }
+    }
+  }
+
+  .main-home {
+
+    .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .right {
+      order: -1;
+    }
+
+    .banner-left, .service-top {
+      display: none;
+    }
+
+    .seller, .service {
+      display: inline-block;
+      width: calc(50% - 15px);
+    }
+
+    .seller {
+      margin-right: 30px;
+    }
+
+    .left {
+      display: flex;
+    }
+  }
+
+  .box-product-img {
+    height: 190px;
+  }
+
+  .product-page .left .seller {
+    display: none;
+  }
 
 }
-
-
 
 @media (max-width: 767px) {
   .product-page {
@@ -345,6 +419,14 @@ $main_color: #1A84D7;
   .cart-page-product-1 img {
     float: none;
     margin-bottom: 10px;
+  }
+
+  .category-banner .box-category-banner {
+    height: 50vw;
+  }
+
+  .box-product-img {
+    height: 190px;
   }
 }
 
@@ -391,8 +473,8 @@ $main_color: #1A84D7;
     box-shadow: 0 3px 6px rgba($color: #000000, $alpha: .16);
   }
 
-  .article-top {
-    padding: 15px 0;
+  .article-top, .product-page .left {
+    padding: 0;
 
     .category {
       top: 0;
@@ -403,6 +485,7 @@ $main_color: #1A84D7;
       transform: translateX(-100%);
       transition: .3s;
       position: fixed;
+      overflow: scroll;
       
       &.active {
         transform: none;
@@ -426,12 +509,116 @@ $main_color: #1A84D7;
     }
   }
 
+  .category {
+    top: 0;
+    z-index: 1000;
+    width: 300px;
+    left: 0;
+    height: 100vh;
+    transform: translateX(-100%);
+    transition: .3s;
+    position: fixed;
+    overflow: scroll;
+    
+    &.active {
+      transform: none;
+    }
+
+    h4 {
+      height: 50px;
+      line-height: 50px;
+    }
+
+    ul {
+      height: auto;
+      transform: none;
+      padding: 15px;
+
+      li {
+        padding-bottom: 15px;
+        margin-bottom: 15px;
+      }
+    }
+  }
+
   .category-btn {
     color: #FE9516!important;
   }
 
   article {
     padding-top: 60px;
+  }
+
+  .main-home .title-page h3 a {
+    font-size: 15px;
+  }
+
+  .box-product {
+    padding: 0;
+
+    span {
+      font-size: 10px;
+      padding: 3px 7px;
+      position: absolute;
+      left: 0;
+      top: 10px;
+      z-index: 1;
+
+      &:after {
+        content: none;
+      }
+    }
+
+    &:hover {
+      border: 0;
+      box-shadow: none;
+    }
+
+    &-img {
+      height: calc((100vw / 2) - 45px);
+  
+      &-custom {
+        display: none;
+      }
+    }
+  }
+
+  .main-home { 
+    .product {
+      margin-bottom: 0;
+    }
+
+    .contact-us, .partner {
+      margin-bottom: 30px;
+    }
+
+    .left {
+      flex-direction: column;
+    }
+
+    .banner-left, .service-top {
+      display: block;
+      text-align: center;
+    }
+
+    .service, .seller {
+      width: 100%;
+    }
+
+    .seller {
+      margin-right: 30px;
+    }
+  }
+
+  .product-page .box-product-img {
+    height: calc((100vw / 2) - 25px)
+  }
+
+  
+  .service-page, .page-detail, .cart-page, .pay-page, .contact-page {
+    .category {
+      display: block;
+    }
   }
 }
 
